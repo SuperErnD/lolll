@@ -1,0 +1,10 @@
+#pragma once
+
+#define IRAM_START   0x40000000
+#define IRAM_LEN     0x40000
+#define PAYLOAD_ADDR 0x40008000
+#define PAYLOAD_LEN  IRAM_LEN - (PAYLOAD_ADDR - IRAM_START)
+#define EXCP_START   0x6000f000
+#define EXCP_LEN     0x400
+#define TZ_START 0x7c010000
+#define TZ_LEN 0x400 * 64
